@@ -40,11 +40,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PerformanceTestContext {
-    public static final String VALID_USER_ID = "be108952-0667-42a9-864e-3e1012f1234a";
-    public static final String VALID_GROUP_ID = "0c24ab45-ae2a-43fe-8e9b-37581175c87c";
 
-    private static final String AUTH_ENDPOINT_ADDRESS = "http://localhost:8180/osiam-auth-server";
-    private static final String RESOURCE_ENDPOINT_ADDRESS = "http://localhost:8180/osiam-resource-server";
+    public static final String VALID_USER_ID = "cef9452e-00a9-4cec-a086-d171374ffbef";
+    public static final String VALID_GROUP_ID = "098b0e9c-d51b-4103-8222-b5c3f74249ff";
+
+    private static final String AUTH_ENDPOINT_ADDRESS = "http://localhost:8280/osiam-auth-server";
+    private static final String RESOURCE_ENDPOINT_ADDRESS = "http://localhost:8280/osiam-resource-server";
     private static final String CLIENT_ID = "example-client";
     private static final String CLIENT_SECRET = "secret";
 
@@ -112,5 +113,4 @@ public class PerformanceTestContext {
     @Ignore("Needed for JMeter to run @BeforeClass and @AfterClass methods")
     public void dummy() {
     }
-
 }
